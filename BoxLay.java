@@ -19,7 +19,7 @@ import javax.swing.WindowConstants;
 		public void panelSuperior(){
 
 			panelSup = new JPanel();
-			lbl2 = new JLabel("User");
+			lbl2 = new JLabel("Usuario");
 			cajaTxt = new JTextField(10);
 			panelSup.setLayout(new BoxLayout(panelSup, BoxLayout.X_AXIS));
 			panelSup.add(lbl2);

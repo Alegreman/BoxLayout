@@ -16,6 +16,11 @@ public class BoxLX {
     frame.add(new JButton("Boton 2"));
     frame.add(new JButton("Boton 3"));
     frame.pack();
+ 
+
+
+
+
 
     frame.setVisible(true);
   }

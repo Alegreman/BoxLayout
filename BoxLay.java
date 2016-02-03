@@ -1,14 +1,15 @@
-import javax.swing.BoxLayout;
-import javax.swing.JTextField;
-import javax.swing.JPanel;
-import javax.swing.JLabel;
-import javax.swing.JFrame;
-import javax.swing.JButton;
-import javax.swing.JPasswordField;
-import javax.swing.WindowConstants;
+//librerias que ocuparé
+import javax.swing.BoxLayout; //para usar el tipo de layout requerido
+import javax.swing.JTextField; // para la captura de datos
+import javax.swing.JPanel; //para implementar un panel
+import javax.swing.JLabel; // uso de etiquetas
+import javax.swing.JFrame; //para usar el frame
+import javax.swing.JButton; // implementar botones
+import javax.swing.JPasswordField; //campo de pass 
+import javax.swing.WindowConstants; //para usar exit on close
 
 	public class BoxLay{
-
+		//declaración de objetos que usaremos
 		private JPanel panelSup,panelMed,panelInfe;
 		private JLabel lbl1,lbl2,lbl3;
 		private JTextField cajaTxt;
@@ -17,7 +18,7 @@ import javax.swing.WindowConstants;
 		private JFrame frame;
 
 		public void panelSuperior(){
-
+			//para crear el panel superior donde se pondra el usuario
 			panelSup = new JPanel();
 			lbl2 = new JLabel("Usuario");
 			cajaTxt = new JTextField(10);
@@ -28,7 +29,7 @@ import javax.swing.WindowConstants;
 		}
 
 		public void panelMedio(){
-	
+			//panel medio para el password
 			panelMed = new JPanel();
 			lbl3 = new JLabel("Password");
 			cajaPass = new JPasswordField(10);
@@ -39,7 +40,7 @@ import javax.swing.WindowConstants;
 
 		public void panelInfe(){
 			
-			
+				//panel para los botones	
 			panelInfe = new JPanel();
 			btnAceptar =  new JButton("Aceptar");
 			btnCancelar = new JButton("Cancelar");
@@ -50,7 +51,7 @@ import javax.swing.WindowConstants;
 		}
 
 		public void ventana(){
-
+			//creacion de la ventana
 			frame = new JFrame();
 			lbl1 = new JLabel("Ejemplo Cajita para log in");
 			frame.setLayout(new BoxLayout(frame.getContentPane(),BoxLayout.Y_AXIS));
@@ -60,13 +61,13 @@ import javax.swing.WindowConstants;
 			frame.add(panelInfe);
 			frame.pack();
 			frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-			frame.setSize(400,100);
+			frame.setSize(300,110);
 			frame.setVisible(true);
 			
 		}
 
 		public BoxLay(){	
-
+			//constructor de la clase, donde usa los métodos para integrarlos a la ventana
 			panelSuperior();
 			panelMedio();
 			panelInfe();
@@ -74,7 +75,7 @@ import javax.swing.WindowConstants;
 		}
 
 		public static void main(String[] a){
-
+			//uso de la ventana
 			new BoxLay();
 		}
 }

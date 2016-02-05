@@ -20,7 +20,7 @@ import javax.swing.WindowConstants; //para usar exit on close
 		public void panelSuperior(){
 			//para crear el panel superior donde se pondra el usuario
 			panelSup = new JPanel();
-			lbl2 = new JLabel("Usuario");
+			lbl2 = new JLabel("Super Usuario");
 			cajaTxt = new JTextField(10);
 			panelSup.setLayout(new BoxLayout(panelSup, BoxLayout.X_AXIS));
 			panelSup.add(lbl2);
@@ -31,7 +31,7 @@ import javax.swing.WindowConstants; //para usar exit on close
 		public void panelMedio(){
 			//panel medio para el password
 			panelMed = new JPanel();
-			lbl3 = new JLabel("Password");
+			lbl3 = new JLabel("Contraseña");
 			cajaPass = new JPasswordField(10);
 			panelMed.setLayout(new BoxLayout(panelMed, BoxLayout.X_AXIS));
 			panelMed.add(lbl3);
